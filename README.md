@@ -9,8 +9,13 @@ Download **[fits_aggregator.sh](https://raw.githubusercontent.com/NCSU-Libraries
 ```
 cd [path to directory where script is located]
 
-bash fits_aggregator.sh [path to directory of fits files] [path to directory for output file]
+bash fits_aggregator.sh [path to directory of fits files] [path to output file]
 ```
 
-Output file will be created in the specified directory as *fits_combined_reports.xml*
+[path to directory of fits files] should be a full path (or relative from script location) to a directory containing only fits reports (XML).
+
+[path to output file] should be the full path (or relative from script location) to the output file to be generated, and should include a '.xml' extension.
+A filename such as 'fits\_combined\_reports.xml' is recommended.
+
+If the script is re-run with the same output file path specified, any existing file with that path will be overwritten.
 
