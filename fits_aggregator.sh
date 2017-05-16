@@ -4,10 +4,7 @@
 SOURCE_DIR=$1
 
 # get destination directory from arguments
-DEST_DIR=$2
-
-# set destination file path
-DEST_FILE="$DEST_DIR/fits_combined_reports.xml"
+DEST_FILE=$2
 
 #initialize output file with xml declaration
 echo '<?xml version="1.0" encoding="UTF-8"?>' > $DEST_FILE
