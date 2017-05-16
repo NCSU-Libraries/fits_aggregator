@@ -3,7 +3,7 @@
 # get source directory from arguments
 SOURCE_DIR=$1
 
-# get destination directory from arguments
+# get destination file path from arguments
 DEST_FILE=$2
 
 #initialize output file with xml declaration
