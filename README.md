@@ -1,5 +1,5 @@
 # fits_aggregator
-A bash script to aggregate multiple fits XML file into a single file.
+A bash script to aggregate multiple fits XML files into a single file.
 
 ## Installation
 
@@ -12,4 +12,5 @@ cd [path to directory where script is located]
 bash fits_aggregator.sh [path to directory of fits files] [path to directory for output file]
 ```
 
+Output file will created in the specified directory as *fits_combined_reports.xml*
 
