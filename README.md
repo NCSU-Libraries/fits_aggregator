@@ -12,5 +12,5 @@ cd [path to directory where script is located]
 bash fits_aggregator.sh [path to directory of fits files] [path to directory for output file]
 ```
 
-Output file will created in the specified directory as *fits_combined_reports.xml*
+Output file will be created in the specified directory as *fits_combined_reports.xml*
 
