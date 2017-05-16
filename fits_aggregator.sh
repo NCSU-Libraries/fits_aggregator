@@ -1,7 +1,12 @@
 #!/bin/bash
 
-DEST_DIR='./test_data/output'
-SOURCE_DIR="./test_data/05bff4d0-71b7-401c-8b28-9966b77d4a17/05bff4d0-71b7-401c-8b28-9966b77d4a17_fits-reports"
+# get source directory from arguments
+SOURCE_DIR=$1
+
+# get destination directory from arguments
+DEST_DIR=$2
+
+# set destination file path
 DEST_FILE="$DEST_DIR/fits_combined_reports.xml"
 
 #initialize output file with xml declaration
