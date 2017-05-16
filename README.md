@@ -5,7 +5,7 @@ A bash script to aggregate multiple fits XML file into a single file.
 ```
 cd [path to directory where script is located]
 
-bash fits_aggregator.sh [path to directory containg fits files] [path to directory where output file should be written]
+bash fits_aggregator.sh [path to directory of fits files] [path to directory for output file]
 ```
 
 
