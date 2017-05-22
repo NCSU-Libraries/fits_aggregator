@@ -20,8 +20,14 @@ echo '' >> $DEST_FILE
 # write contents to $DEST_FILE, excluding xml declaration
 for file in $SOURCE_DIR/*
 do
-  cat $file | grep -v '^<?xml' >> $DEST_FILE
-  echo '' >> $DEST_FILE
+
+  while IFS= read -r line || [[ -n "$line" ]]; do
+    if [[ $line != '<?xml'* ]]
+    then
+      echo $line >> $DEST_FILE
+    fi
+  done < "$file"
+
 done
 
 # append closing docSet tag
